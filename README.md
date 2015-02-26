@@ -17,13 +17,13 @@ requirements:
 server installation:
 
 - Download from http://geoserver.org/release/stable/ the latest geoserver stable version (WAR - web archive is recommended)
-- Put WAR (web archive) into /var/lib/tomcat7/webapps/ and wait until Tomcat has unpacked and started geowebcache
+- Put WAR (web archive) into /var/lib/tomcat7/webapps/ and wait until Tomcat has unpacked and started geoserver
 	- it's possible to use "wget linkToSource" or simply use an sftp client to upload the desired file to your Tomcat7 Instance
 	- if used wget you have to "cd" to .../webapps/ directory in tomcat before
 - geoserver should reachable by http://yourInternalServerIp:8181/geoserver
 - if you wish to reach geoserver by outside your network you have to know your ip address, your dynamic dns service domain or your toplevel domain (if you registered one by an ISP)
 	- opened port 8181 pointing to your internal server (feel free to use ports between 1024 until 49151, non standardised)
-	- type yourDomainName:8181/geoserver to view the website of geowebcache
+	- type yourDomainName:8181/geoserver to view the website of geoserver
 
 local installation:
 
