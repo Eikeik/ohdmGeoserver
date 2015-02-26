@@ -16,7 +16,7 @@ requirements:
 
 server installation:
 
-- Download from http://geowebcache.org/ under Downloads the latest geowebcache-1.6.0-war.zip (WAR - web archive is recommended)
+- Download from http://geoserver.org/release/stable/ the latest geoserver stable version (WAR - web archive is recommended)
 - Put WAR (web archive) into /var/lib/tomcat7/webapps/ and wait until Tomcat has unpacked and started geowebcache
 	- it's possible to use "wget linkToSource" or simply use an sftp client to upload the desired file to your Tomcat7 Instance
 	- if used wget you have to "cd" to .../webapps/ directory in tomcat before
