@@ -1,6 +1,6 @@
 # ohdmGeoserver
 
-These are the required steps to install a geowebcache instance on your Debian-Server
+These are the required steps to install a geoserver instance on your Debian-Server
 - User Manual: http://docs.geoserver.org/stable/en/user/
 
 requirements:
