@@ -1,0 +1,57 @@
+<html>
+        <head>
+                <meta http-equiv="imagetoolbar" content="no">
+
+                <title>ohdmBerlinSuperMap:EPSG:4326 image/png</title>
+
+                <style type="text/css">
+                        body { font-family: sans-serif; font-weight: bold; font-size: .8em; }
+                        body { border: 0px; margin: 0px; padding: 0px; }
+                        #map { width: 45%; height: 45%; border: 0px; padding: 0px; }
+                </style>
+
+                <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+                <script type="text/javascript">
+                                var map, layer;
+
+                                function init(){
+                                        var mapOptions = {
+                                                resolutions: [
+                                                        0.703125, 0.3515625, 0.17578125, 0.087890625,
+                                                        0.0439453125, 0.02197265625, 0.010986328125,
+                                                        0.0054931640625, 0.00274658203125, 0.001373291015625,
+                                                        6.866455078125E-4, 3.4332275390625E-4, 1.71661376953125E-4,
+                                                        8.58306884765625E-5, 4.291534423828125E-5, 2.1457672119140625E-5,
+                                                        1.0728836059570312E-5, 5.364418029785156E-6, 2.682209014892578E-6,
+                                                        1.341104507446289E-6, 6.705522537231445E-7, 3.3527612686157227E-7
+                                                ],
+                                                projection: new OpenLayers.Projection('EPSG:4326'),
+                                                maxExtent: new OpenLayers.Bounds(-180.0,-90.0,180.0,90.0),
+                                                units: "degrees",
+                                                controls: []
+                                        };
+
+                                        map = new OpenLayers.Map('map', mapOptions );
+
+                                        map.addControl(new OpenLayers.Control.PanZoomBar({
+                                                        position: new OpenLayers.Pixel(2, 15)
+                                        }));
+
+                                        map.addControl(new OpenLayers.Control.Navigation());
+                                        var demolayer = new OpenLayers.Layer.WMS(
+                                                                        "ohsm:ohdm_berlin_dev2","http://ohsm.f4.htw-berlin.de:8080/geoserver/gwc/service/wms",
+                                                                        {layers: 'ohsm:ohdm_berlin_dev2', format: 'image/png' },
+                                                                        {tileSize: new OpenLayers.Size(256,256)}
+                                        );
+
+                                        map.addLayer(demolayer);
+					map.setCenter(new OpenLayers.LonLat(13.39115, 52.52008), 9);
+                                }
+                </script>
+        </head>
+
+        <body onload="init()">
+			Hello World
+                        <div id="map"></div>
+        </body>
+</html>
