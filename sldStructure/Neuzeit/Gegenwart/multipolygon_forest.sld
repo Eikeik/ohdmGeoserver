@@ -5,33 +5,20 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
-  <NamedLayer>
-    <Name>multipolygon_forest</Name>
-    <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>Default Polygon</Title>
-      <Abstract>A sample style that draws a multipolygon_forest</Abstract>
-      <!-- FeatureTypeStyles describe how to render different features -->
-      <!-- A FeatureTypeStyle for rendering polygons -->
-      <FeatureTypeStyle>
-        <Rule>
-          <Name>rule1</Name>
-          <Title>Dark green Polygon</Title>
-          <Abstract>A polygon with a dark green fill</Abstract>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#006633</CssParameter>
-            </Fill>
-            <!--Stroke>
-              <CssParameter name="stroke">#006633</CssParameter>
-              <CssParameter name="stroke-width">2</CssParameter>
-            </Stroke-->
-          </PolygonSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
-    </UserStyle>
-  </NamedLayer>
+  	<NamedLayer>
+    	<Name>multipolygon_forest</Name>
+    	<UserStyle>
+      		<Title>Forest green polygon</Title>
+      		<Abstract>Draws a forest green polygon.</Abstract>
+      		<FeatureTypeStyle>
+        		<Rule>
+          			<PolygonSymbolizer>
+            			<Fill>
+              				<CssParameter name="fill">#228B22</CssParameter>
+            			</Fill>
+          			</PolygonSymbolizer>
+       			</Rule>
+      		</FeatureTypeStyle>
+    	</UserStyle>
+  	</NamedLayer>
 </StyledLayerDescriptor>
-
-

@@ -5,34 +5,27 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
-  <NamedLayer>
-    <Name>ohdm_multipoint_shop</Name>
-    <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>ohdm_multipoint_shop</Title>
-      <Abstract>A sample style that draws a point</Abstract>
-      <!-- FeatureTypeStyles describe how to render different features -->
-      <!-- A FeatureTypeStyle for rendering points -->
-      <FeatureTypeStyle>
-     <Rule>
-       <MaxScaleDenominator>3000</MaxScaleDenominator>
-       <PointSymbolizer>
-         <Graphic>
-           <Mark>
-             <WellKnownName>circle</WellKnownName>
-             <Fill>
-               <CssParameter name="fill">#FF0000</CssParameter>
-             </Fill>
-             
-           </Mark>
-           <Size>4</Size>
-         </Graphic>
-       </PointSymbolizer>
-     </Rule>
-   </FeatureTypeStyle>
-    </UserStyle>
-  </NamedLayer>
+  	<NamedLayer>
+    	<Name>multipoint_shop</Name>
+    	<UserStyle>
+      		<Title>Red point</Title>
+      		<Abstract>Draws a red point.</Abstract>
+      		<FeatureTypeStyle>
+     			<Rule>
+       				<MaxScaleDenominator>3000</MaxScaleDenominator>
+       				<PointSymbolizer>
+         				<Graphic>
+           					<Mark>
+             					<WellKnownName>circle</WellKnownName>
+             					<Fill>
+               						<CssParameter name="fill">#FF0000</CssParameter>
+             					</Fill>       
+           					</Mark>
+           					<Size>4</Size>
+         				</Graphic>
+       				</PointSymbolizer>
+     			</Rule>
+   			</FeatureTypeStyle>
+    	</UserStyle>
+  	</NamedLayer>
 </StyledLayerDescriptor>
-
-

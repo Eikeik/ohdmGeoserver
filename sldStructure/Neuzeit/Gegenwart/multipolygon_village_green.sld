@@ -5,9 +5,8 @@
   <NamedLayer>
     <Name>city_green</Name>
     <UserStyle>
-      <Name>green</Name>
-      <Title>Green polygon</Title>
-      <Abstract>Green fill with green outline</Abstract>
+      <Title>Light green polygon</Title>
+      <Abstract>Green filled polygon to represent green areas in a city.</Abstract>
       <FeatureTypeStyle>
         <Rule>
           <PolygonSymbolizer>
@@ -19,11 +18,6 @@
                 <ogc:Literal>1.0</ogc:Literal>
               </CssParameter>
             </Fill>
-            <!--Stroke>
-              <CssParameter name="stroke">
-                <ogc:Literal>#47D147</ogc:Literal>
-              </CssParameter>
-            </Stroke-->
           </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>

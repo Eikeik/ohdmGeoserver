@@ -5,27 +5,21 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
-  <NamedLayer>
-    <Name>multilinestring_path</Name>
-    <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>Default Line</Title>
-      <Abstract>A sample style that draws a line</Abstract>
-      <!-- FeatureTypeStyles describe how to render different features -->
-      <!-- A FeatureTypeStyle for rendering lines -->
-      <FeatureTypeStyle>
-        <Rule> 
-          <MaxScaleDenominator>24000</MaxScaleDenominator>
-          <LineSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#876319</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
-    </UserStyle>
-  </NamedLayer>
+  	<NamedLayer>
+    	<Name>multilinestring_path</Name>
+    	<UserStyle>
+      		<Title>Brown line</Title>
+      		<Abstract>Draws a brown line.</Abstract>
+      		<FeatureTypeStyle>
+        		<Rule> 
+          			<MaxScaleDenominator>24000</MaxScaleDenominator>
+          			<LineSymbolizer>
+            			<Stroke>
+              				<CssParameter name="stroke">#876319</CssParameter>
+            			</Stroke>
+          			</LineSymbolizer>
+        		</Rule>
+      		</FeatureTypeStyle>
+    	</UserStyle>
+  	</NamedLayer>
 </StyledLayerDescriptor>
-
-

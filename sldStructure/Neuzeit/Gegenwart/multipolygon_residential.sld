@@ -5,45 +5,39 @@
  xmlns:ogc="http://www.opengis.net/ogc" 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- a Named Layer is the basic building block of an SLD document -->
-  <NamedLayer>
-    <Name>multipolygon_residential</Name>
-    <UserStyle>
-    <!-- Styles can have names, titles and abstracts -->
-      <Title>Default Polygon</Title>
-      <Abstract>A sample style that draws a multipolygon residential</Abstract>
-      <!-- FeatureTypeStyles describe how to render different features -->
-      <!-- A FeatureTypeStyle for rendering polygons -->
-      <FeatureTypeStyle>
-        <Rule>
-          <MinScaleDenominator>137000</MinScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#FFE994</CssParameter>
-            </Fill>
-            <!--Stroke>
-              <CssParameter name="stroke">#FFE994</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-            </Stroke-->
-          </PolygonSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
-      <FeatureTypeStyle>
-        <Rule>
-          <MaxScaleDenominator>138000</MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#FFFFFF</CssParameter>
-            </Fill>
-            <!--Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-            </Stroke-->
-          </PolygonSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
-    </UserStyle>
-  </NamedLayer>
+  	<NamedLayer>
+    	<Name>multipolygon_residential</Name>
+    	<UserStyle>
+      		<Title>Light yellow polygon with 2 different styles</Title>
+      		<Abstract>Draws a light yellow polygon or a light yellow polygon depending on scale factor.</Abstract>
+      		<FeatureTypeStyle>
+        		<Rule>
+          			<MinScaleDenominator>137000</MinScaleDenominator>
+          			<PolygonSymbolizer>
+            			<Fill>
+              				<CssParameter name="fill">#FFF8DC</CssParameter>
+            			</Fill>
+            			<Stroke>
+              				<CssParameter name="stroke">#FFF8DC</CssParameter>
+              				<CssParameter name="stroke-width">0.8</CssParameter>
+            			</Stroke>
+          			</PolygonSymbolizer>
+        		</Rule>
+      		</FeatureTypeStyle>
+      		<FeatureTypeStyle>
+       			<Rule>
+       				<MaxScaleDenominator>138000</MaxScaleDenominator>
+         			<PolygonSymbolizer>
+            			<Fill>
+              				<CssParameter name="fill">#FCFFF0</CssParameter>
+            			</Fill>
+            			<Stroke>
+              				<CssParameter name="stroke">#EEDC82</CssParameter>
+              				<CssParameter name="stroke-width">0.5</CssParameter>
+            			</Stroke>
+          			</PolygonSymbolizer>
+        		</Rule>
+      		</FeatureTypeStyle>
+    	</UserStyle>
+  	</NamedLayer>
 </StyledLayerDescriptor>
-
-
