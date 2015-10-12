@@ -8,8 +8,8 @@
   	<NamedLayer>
     	<Name>multilinestring_living_road</Name>
     	<UserStyle>
-      		<Title>Beige line with darkgrey outline</Title>
-      		<Abstract>Draws a beige line with darkgrey outline in 2 different scales.</Abstract>
+      		<Title>Beige line with darkgray outline</Title>
+      		<Abstract>Draws a beige line with darkgray outline in 2 different scales.</Abstract>
       		<FeatureTypeStyle>
         		<Rule> 
           			<MaxScaleDenominator>47000</MaxScaleDenominator>

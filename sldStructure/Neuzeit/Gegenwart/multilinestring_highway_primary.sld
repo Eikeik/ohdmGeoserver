@@ -6,7 +6,7 @@
  	xmlns:xlink="http://www.w3.org/1999/xlink" 
  	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   	<NamedLayer>
-    	<Name>highway_primary</Name>
+    	<Name>multilinestring_highway_primary</Name>
     	<UserStyle>
       		<Title>Orange line with darkgray outline</Title>
       		<Abstract>Orange line with darkgray outline in 6 different scales.</Abstract>

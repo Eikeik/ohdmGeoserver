@@ -9,8 +9,7 @@
     	<Name>multilinestring_motorway_label</Name>
     	<UserStyle>
       		<Title>Red rectangle with white letters.</Title>
-      		<Abstract>
-              Draws a red rectangle with white letters in 3 different scale variants that change the distance between two labels.</Abstract>
+      		<Abstract>Draws a red rectangle with white letters in 3 different scale variants that change the distance between two labels.</Abstract>
       		<FeatureTypeStyle>
         		<Rule>
           			<MinScaleDenominator>24000</MinScaleDenominator>

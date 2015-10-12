@@ -7,8 +7,8 @@
   	<NamedLayer>
     	<Name>multilienestring_trunk</Name>
     	<UserStyle>
-      		<Title>Orange line with darkgrey outline</Title>
-      		<Abstract>Draws a orange line with darkgrey outline in 3 different scales.</Abstract>
+      		<Title>Orange line with darkgray outline</Title>
+      		<Abstract>Draws a orange line with darkgray outline in 3 different scales.</Abstract>
       		<FeatureTypeStyle>           
         		<Rule>         
 					<MaxScaleDenominator>546000</MaxScaleDenominator>
@@ -110,7 +110,8 @@
             			</Label>
             			<Font>
               				<CssParameter name="font-family">Arial</CssParameter>
-              				<CssParameter name="font-style">Normal</CssParameter>
+              				<CssParameter name="font-size">10</CssParameter>
+           					<CssParameter name="font-style">normal</CssParameter>
             			</Font>
             			<LabelPlacement>
               				<LinePlacement/>

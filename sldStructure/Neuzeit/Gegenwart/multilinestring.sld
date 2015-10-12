@@ -6,7 +6,7 @@
  xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   	<NamedLayer>
-    	<Name>ohdm_multilinestring</Name>
+    	<Name>multilinestring</Name>
     	<UserStyle>
       		<Title>Beige line</Title>
       		<Abstract>Draws a beige line.</Abstract>
